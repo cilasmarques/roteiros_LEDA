@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b854ff-9051-4f3e-b1fe-f09edeb84cfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +38,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="63" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -133,6 +140,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -269,7 +277,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554951693865</updated>
-      <workItem from="1554951696700" duration="6456000" />
+      <workItem from="1554951696700" duration="6592000" />
     </task>
     <servers />
   </component>
@@ -306,11 +314,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6456000" />
+    <option name="totallyTimeSpent" value="6592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -327,7 +334,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,7 +406,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="63" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

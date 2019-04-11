@@ -21,42 +21,45 @@ public class OrderStatisticsSelectionImpl<T extends Comparable<T>> implements Or
     */
    @Override
    public T getOrderStatistics(T[] array, int k) {
-      if (k > array.length || 0 > k)
-         return null;
-      else
-         return selectionSort(array, k, 0);
+      if(array.length >= k && k > 0) {
+         return selectionSort(array, k, selectSmaller(array, k), selectBigger(array, k));
+      }
+      return null;
    }
 
-   //ESSE NEGOCIO TA ESTRANHO... MAS SEGUE AS RESTRIÇÕES :v
-   private T selectionSort(T[] a, int k, int index) {
+   private T selectionSort(T[] array, int k, T previousMinor, T maior) {
+      if (k > 1) {
+         T actualMinor = maior;
 
-      //definindo elemento para comparação nao nulo
-      while (a[index] == null)
-         index++;
-      int menor = index;
-
-      //condição de parada
-      if (k == 1) {
-         return a[menor];
-      }
-
-      //encontrando o menor elemento
-      for (int i = 0; i < a.length; i++)
-         if (a[i] != null) {
-            if (a[menor].compareTo(a[i]) > 0)
-               menor = i;
+         for (int i = 0; i < array.length; i++) {
+            if ((array[i].compareTo(previousMinor) > 0) && (array[i].compareTo(actualMinor) < 0)) {
+               actualMinor = array[i];
+            }
          }
+         return selectionSort(array, k - 1, actualMinor, maior);
+      }
+      return previousMinor;
+   }
 
-      //removendo o menor valor do array
-      T valorMenor = a[menor];
-      a[menor] = null;
+   private T selectSmaller(T[] array, int k) {
+      T menor = array[0];
+      for (int i = 1; i < array.length; i++) {
+         if (array[i].compareTo(menor) < 0) {
 
-      //analisando o resto do array
-      T kesimo = selectionSort(a, k - 1, index);
+            menor = array[i];
 
-      //recolocando o menor valor do array
-      a[menor] = valorMenor;
+         }
+      }
+      return menor;
+   }
 
-      return kesimo;
+   private T selectBigger(T[] array, int k) {
+      T maior = array[0];
+      for (int i = 1; i < array.length; i++) {
+         if (array[i].compareTo(maior) > 0) {
+            maior= array[i];
+         }
+      }
+      return maior;
    }
 }
