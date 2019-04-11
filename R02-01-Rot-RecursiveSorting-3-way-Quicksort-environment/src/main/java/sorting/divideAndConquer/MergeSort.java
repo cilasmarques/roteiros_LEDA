@@ -12,57 +12,44 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
    @Override
    public void sort(T[] array, int leftIndex, int rightIndex) {
-      if (leftIndex < 0) {
-         leftIndex = 0;
-      }
-      if (rightIndex > array.length - 1) {
-         rightIndex = array.length - 1;
-      }
-
-      if ((array != null) && (array.length > 0) && (leftIndex < rightIndex) && (array instanceof Comparable[])) {
+      if (array != null && array.length > rightIndex && leftIndex >= 0 && leftIndex < rightIndex)
          mergeSort(array, leftIndex, rightIndex);
-      }
    }
 
    public void mergeSort(T[] array, int leftIndex, int rightIndex) {
       if (leftIndex < rightIndex) {
-
-         int med = (leftIndex + rightIndex) / 2;
-         mergeSort(array, leftIndex, med);
-         mergeSort(array, med + 1, rightIndex);
-         merge(array, leftIndex, med, rightIndex);
+         int mid = (rightIndex + leftIndex) / 2;
+         mergeSort(array, leftIndex, mid);
+         mergeSort(array, mid + 1, rightIndex);
+         merge(array, leftIndex, mid, rightIndex);
       }
    }
 
-   public void merge(T[] array, int leftIndex, int med, int rightIndex) {
+   public void merge(T[] array, int leftIndex, int mid, int rightIndex) {
 
-      T[] auxiliar = (T[]) new Comparable[rightIndex + 1];
-
-      for (int i = leftIndex; i <= rightIndex; i++) {
-         auxiliar[i] = array[i];
-      }
+      T[] aux = array.clone();
 
       int i = leftIndex;
-      int j = med + 1;
+      int j = mid + 1;
       int k = leftIndex;
 
-      while (i <= med && j <= rightIndex) {
-         if (auxiliar[i].compareTo(auxiliar[j]) < 0) {
-            array[k] = auxiliar[i];
+      while (i <= mid && j <= rightIndex) {
+         if (aux[i].compareTo(aux[j]) < 0) {
+            array[k] = aux[i];
             i++;
          } else {
-            array[k] = auxiliar[j];
+            array[k] = aux[j];
             j++;
          }
          k++;
       }
 
-      while (i <= med) {
-         array[k++] = auxiliar[i++];
+      while (i <= mid) {
+         array[k++] = aux[i++];
       }
 
       while (j <= rightIndex) {
-         array[k++] = auxiliar[j++];
+         array[k++] = aux[j++];
       }
    }
 }

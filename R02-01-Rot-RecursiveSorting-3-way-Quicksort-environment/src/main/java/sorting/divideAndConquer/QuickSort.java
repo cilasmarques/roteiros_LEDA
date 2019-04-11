@@ -3,7 +3,6 @@ package sorting.divideAndConquer;
 import sorting.AbstractSorting;
 import util.Util;
 
-
 /**
  * Quicksort is based on the divide-and-conquer paradigm. The algorithm chooses
  * a pivot element and rearranges the elements of the interval in such a way
@@ -14,39 +13,38 @@ import util.Util;
  */
 public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
-	@Override
-	public void sort(T[] array, int leftIndex, int rightIndex) {
-		if(leftIndex < 0) {
-			leftIndex = 0;
-		}
-		if(rightIndex > array.length - 1) {
-			rightIndex = array.length - 1;
-		}
+   @Override
+   public void sort(T[] array, int leftIndex, int rightIndex) {
+      if (array != null && array.length > rightIndex && leftIndex >= 0 && leftIndex < rightIndex)
+         quickSort(array, leftIndex, rightIndex);
+   }
 
-		if((array != null) && (array.length > 0) && (leftIndex < rightIndex)) {
-			quickSort(array, leftIndex, rightIndex);
-		}
-	}
+   private void quickSort(T[] array, int leftIndex, int rightIndex) {
+      if (leftIndex < rightIndex) {
+         int particion = particion(array, leftIndex, rightIndex);
+         quickSort(array, leftIndex, particion - 1);
+         quickSort(array, particion + 1, rightIndex);
+      }
+   }
 
-	private void quickSort(T[] array, int leftIndex, int rightIndex) {
-		if(leftIndex < rightIndex) {
-			int pos_pivot = particiona(array, leftIndex, rightIndex);
-			quickSort(array, leftIndex, pos_pivot - 1);
-			quickSort(array, pos_pivot + 1, rightIndex);
-		}
+   private int particion(T[] array, int leftIndex, int rightIndex) {
 
-	}
+      int i = leftIndex + 1;
+      int j = rightIndex;
+      int p = leftIndex;
 
-	public int particiona(T[] array, int leftIndex, int rightIndex) {
-		T pivot = array[leftIndex];
-		int i = leftIndex;
-		for(int j = leftIndex + 1; j <= rightIndex; j++) {
-			if(array[j].compareTo(pivot) < 0) {
-				i++;
-				Util.swap(array, i, j);
-			}
-		}
-		Util.swap(array, leftIndex, i);
-		return i;
-	}
+      while (i <= j) {
+         if (array[i].compareTo(array[p]) <= 0) {
+            i++;
+         } else if (array[j].compareTo(array[p]) > 0) {
+            j--;
+         } else if (i <= j) {
+            Util.swap(array, i, j);
+         }
+      }
+
+      Util.swap(array, leftIndex, j);
+
+      return j;
+   }
 }

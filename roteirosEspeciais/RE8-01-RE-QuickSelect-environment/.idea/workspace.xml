@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0791bac2-cd3b-4ac3-b718-8c11b3db28e9" name="Default Changelist" comment="" />
+    <list default="true" id="2ddd480a-fecc-48b2-a5bb-087bcd5d8cf5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R04-01-Rot-SelectionAndBinarySearch-environment/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,26 +12,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/QuickSelect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="513">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -37,15 +26,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/orderStatistic/teste.java" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-64" />
@@ -59,64 +40,51 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE8-01-RE-QuickSelect-environment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE8-01-RE-QuickSelect-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE8-01-RE-QuickSelect-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE8-01-RE-QuickSelect-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE8-01-RE-QuickSelect-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orderStatistic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="problems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R04-01-Rot-SelectionAndBinarySearch-environment" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../R02-01-Rot-RecursiveSorting-3-way-Quicksort-environment" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -137,17 +105,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0791bac2-cd3b-4ac3-b718-8c11b3db28e9" name="Default Changelist" comment="" />
-      <created>1554958349808</created>
+      <changelist id="2ddd480a-fecc-48b2-a5bb-087bcd5d8cf5" name="Default Changelist" comment="" />
+      <created>1554959711531</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554958349808</updated>
-      <workItem from="1554958352768" duration="251000" />
+      <updated>1554959711531</updated>
+      <workItem from="1554959713068" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251000" />
+    <option name="totallyTimeSpent" value="171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
@@ -186,24 +154,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/teste.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/QuickSelect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="513">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
