@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="086eed09-8788-477c-a06e-7b85138270bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="086eed09-8788-477c-a06e-7b85138270bd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,7 +225,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554949967023</updated>
-      <workItem from="1554949970538" duration="1080000" />
+      <workItem from="1554949970538" duration="1295000" />
     </task>
     <servers />
   </component>
@@ -246,13 +242,21 @@
     <history-entry file="RecursiveSelectionSortTest_testSort7 - 2019.04.10 at 23h 50m 38s.xml">
       <configuration name="RecursiveSelectionSortTest.testSort7" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RecursiveSelectionSortTest_testSort7 - 2019.04.10 at 23h 50m 55s.xml">
+      <configuration name="RecursiveSelectionSortTest.testSort7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveSelectionSortTest_testSort7 - 2019.04.10 at 23h 51m 04s.xml">
+      <configuration name="RecursiveSelectionSortTest.testSort7" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="RecursiveSelectionSortTest - 2019.04.10 at 23h 51m 14s.xml">
+      <configuration name="RecursiveSelectionSortTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1080000" />
+    <option name="totallyTimeSpent" value="1295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -269,7 +273,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
