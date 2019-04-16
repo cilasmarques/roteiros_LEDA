@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-15T16:24:26.254-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 150.165.42.194</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-15T22:34:57.167-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.106</message>
+</record>
