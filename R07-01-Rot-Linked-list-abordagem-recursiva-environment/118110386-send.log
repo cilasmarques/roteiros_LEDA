@@ -7,3 +7,23 @@
   <level>FINE</level>
   <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 150.165.42.159</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-25T15:45:02.579-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 150.165.42.159</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-26T00:59:49.687-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.107</message>
+</record>
