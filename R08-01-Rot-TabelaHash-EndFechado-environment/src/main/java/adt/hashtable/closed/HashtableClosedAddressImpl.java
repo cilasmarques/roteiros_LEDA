@@ -61,19 +61,21 @@ public class HashtableClosedAddressImpl<T> extends
 		return number;
 	}
 
+	private int getHash(T element) {
+		return ((HashFunctionClosedAddress) this.hashFunction).hash(element);
+	}
+
 	@Override
 	public void insert(T element) {
-		int hash = ((HashFunctionClosedAddress) this.hashFunction).hash(element);
+		if (element != null && getHash(element) >= 0) {
 
-		if (element != null && hash >= 0) {
+			if (this.table[getHash(element)] == null)
+				this.table[getHash(element)] = new LinkedList<>();
 
-			if (this.table[hash] == null)
-				this.table[hash] = new LinkedList<>();
-
-			if (((LinkedList<T>) this.table[hash]).size() > 0)
+			if (((LinkedList<T>) this.table[getHash(element)]).size() > 0)
 				this.COLLISIONS++;
 
-			((LinkedList<T>) this.table[hash]).add(element);
+			((LinkedList<T>) this.table[getHash(element)]).add(element);
 			this.elements++;
 		}
 	}
@@ -81,9 +83,8 @@ public class HashtableClosedAddressImpl<T> extends
 	@Override
 	public void remove(T element) {
 		if(element != null){
-			int hash = ((HashFunctionClosedAddress) this.hashFunction).hash(element);
-			if (this.table[hash] != null){
-				((LinkedList<T>) this.table[hash]).remove(element);
+			if (this.table[getHash(element)] != null){
+				((LinkedList<T>) this.table[getHash(element)]).remove(element);
 				this.elements--;
 			}
 		}
@@ -91,10 +92,8 @@ public class HashtableClosedAddressImpl<T> extends
 
 	@Override
 	public T search(T element) {
-		int hash = ((HashFunctionClosedAddress) this.hashFunction).hash(element);
-
-		if (this.table[hash] != null) {
-			((LinkedList<T>) this.table[hash]).contains(element);
+		if (this.table[getHash(element)] != null) {
+			((LinkedList<T>) this.table[getHash(element)]).contains(element);
 			return element;
 		}
 		return null;
@@ -103,10 +102,8 @@ public class HashtableClosedAddressImpl<T> extends
 	@Override
 	public int indexOf(T element) {
 		if(element != null){
-			for(int i = 0; i < this.table.length; i++){
-				if(this.table[i] != null && ((LinkedList<T>) this.table[i]).contains(element))
-					return i;
-			}
+			if(this.table[getHash(element)] != null && ((LinkedList<T>) this.table[getHash(element)]).contains(element))
+				return getHash(element);
 		}
 		return -1;
 	}
