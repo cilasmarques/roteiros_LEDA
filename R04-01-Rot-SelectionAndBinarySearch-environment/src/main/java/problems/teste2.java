@@ -9,7 +9,7 @@ public class teste2 {
 
     @Test
     public void teste() {
-        Integer[] inteiros = {0,1,2,3,4,5,6,7,8,9};
+        Integer[] inteiros = {0,1,2,3,4,6,7,8,9};
         Integer ceil1 = teste2.ceil(inteiros, 10);
         Integer floor1 = teste2.floor(inteiros, -1);
         System.out.println(ceil1);
