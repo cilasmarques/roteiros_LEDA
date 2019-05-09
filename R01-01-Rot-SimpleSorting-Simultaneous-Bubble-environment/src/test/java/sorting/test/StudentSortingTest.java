@@ -40,12 +40,10 @@ public class StudentSortingTest {
 	 * do aluno
 	 */
 	private void getImplementation() {
-		// TODO O aluno deve instanciar sua implementação abaixo ao invés de null
-
-		//this.implementation = new SimultaneousBubblesort<Integer>();
+		this.implementation = new SimultaneousBubblesort<Integer>();
 		//this.implementation = new BubbleSort<Integer>();
 		//this.implementation = new InsertionSort<Integer>();
-		this.implementation = new SelectionSort<>();
+		//this.implementation = new SelectionSort<>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {

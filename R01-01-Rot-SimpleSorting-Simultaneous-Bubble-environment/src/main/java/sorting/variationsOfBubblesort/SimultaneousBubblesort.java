@@ -12,24 +12,22 @@ import util.Util;
  * from index 1 to index N-2. And so on. The execution continues until the array
  * is completely ordered.
  */
-public class SimultaneousBubblesort<T extends Comparable<T>> extends
-		AbstractSorting<T> {
+public class SimultaneousBubblesort<T extends Comparable<T>> extends AbstractSorting<T> {
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		for (int i = leftIndex; i<rightIndex/2; i++){
-
-			int extremaEsquerda = i;
-			for (int andadaEsquerda = leftIndex; andadaEsquerda < rightIndex; andadaEsquerda++) {
-				if (array[andadaEsquerda].compareTo(array[andadaEsquerda + 1]) > 0) {
-					Util.swap(array, andadaEsquerda, andadaEsquerda + 1);
+		while (leftIndex < rightIndex) {
+			for (int i = leftIndex; i < rightIndex; i++) {
+				if (array[i].compareTo(array[i + 1]) > 0) {
+					Util.swap(array, i, i + 1);
 				}
 			}
-
-			int extremaDireita= rightIndex - i;
-			for (int andadaDireita= rightIndex; andadaDireita > leftIndex; andadaDireita--) {
-				if (array[andadaDireita].compareTo(array[andadaDireita - 1]) < 0) {
-					Util.swap(array, andadaDireita, andadaDireita- 1);
+			rightIndex--;
+			
+			for (int j = rightIndex; j > leftIndex; j--) {
+				if (array[j].compareTo(array[j - 1]) < 0) {
+					Util.swap(array, j, j - 1);
 				}
 			}
+			leftIndex++;
 		}
 	}
 }
