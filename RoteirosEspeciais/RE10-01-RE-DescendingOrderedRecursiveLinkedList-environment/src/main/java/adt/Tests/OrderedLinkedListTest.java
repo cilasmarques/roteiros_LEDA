@@ -29,12 +29,12 @@ public class OrderedLinkedListTest {
 		lista1.insert(4);
 		lista1.insert(4);
 		lista1.insert(4);
-		lista1.insert(3);
+		lista1.insert(6);
 		lista1.insert(4);
 		lista1.insert(3);
 		lista1.insert(4);
 		lista1.insert(3);
-		lista1.insert(4);
+		lista1.insert(5);
 
 	}
 
@@ -44,7 +44,7 @@ public class OrderedLinkedListTest {
 	}
 
 	@Test
-	public void sort() {
+	public void max() {
 		lista1.setComparator(new Comparator<Integer>() {
 			@Override
 			public int compare(Integer integer, Integer t1) {
@@ -52,8 +52,20 @@ public class OrderedLinkedListTest {
 			}
 		});
 
-		System.out.println(lista1.maximum()); // 3
+		System.out.println(lista1.maximum()); // 6
 		System.out.println(lista2.maximum()); // null
+	}
+
+	@Test
+	public void sortLinkedList() {
+		lista1.setComparator(new Comparator<Integer>() {
+			@Override
+			public int compare(Integer integer, Integer t1) {
+				return integer.compareTo(t1);
+			}
+		});
+		lista1.sortLinkedList(lista1);
+		System.out.println(Arrays.toString(lista1.toArray()));
 	}
 
 	@Test

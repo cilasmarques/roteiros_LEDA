@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70aed28c-3408-425a-b82d-9e936264253c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adt/Tests/OrderedLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/Tests/OrderedLinkedListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,19 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="1350">
               <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
               <folding>
+                <element signature="e#2107#2108#0" expanded="true" />
                 <element signature="e#2163#2164#0" expanded="true" />
+                <element signature="e#2204#2205#0" expanded="true" />
                 <element signature="e#2228#2229#0" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
                 <element signature="e#2319#2320#0" expanded="true" />
               </folding>
             </state>
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/Tests/LinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="765">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -47,13 +46,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/Tests/OrderedLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="225">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
+                <element signature="e#1872#1873#0" expanded="true" />
+                <element signature="e#1911#1912#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,14 +63,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="870">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#1390#1391#0" expanded="true" />
                 <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1440#1441#0" expanded="true" />
                 <element signature="e#1463#1464#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
                 <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
                 <element signature="e#1621#1622#0" expanded="true" />
               </folding>
             </state>
@@ -103,8 +108,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderedLinkedListTest.removeDuplicated">
+  <component name="RunManager" selected="JUnit.OrderedLinkedListTest">
     <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercicio" />
       <extension name="coverage">
@@ -256,8 +261,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderedLinkedListTest.removeDuplicated" />
         <item itemvalue="JUnit.OrderedLinkedListTest" />
+        <item itemvalue="JUnit.OrderedLinkedListTest.removeDuplicated" />
         <item itemvalue="JUnit.OrderedLinkedListTest.sort" />
         <item itemvalue="JUnit.LinkedListTest" />
       </list>
@@ -274,6 +279,7 @@
       <option name="presentableId" value="Default" />
       <updated>1557367692107</updated>
       <workItem from="1557367695188" duration="12200000" />
+      <workItem from="1557382424691" duration="53000" />
     </task>
     <servers />
   </component>
@@ -310,7 +316,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12200000" />
+    <option name="totallyTimeSpent" value="12253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
@@ -321,7 +327,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -355,7 +361,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/adt/Tests/OrderedLinkedListTest.java</url>
-          <line>69</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -363,49 +369,58 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+          <folding>
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/adt/Tests/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="765">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="870">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
             <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
             <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
             <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
             <element signature="e#1621#1622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
-          <folding>
-            <element signature="e#2163#2164#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2319#2320#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/adt/Tests/OrderedLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="225">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
           </folding>
         </state>
       </provider>
