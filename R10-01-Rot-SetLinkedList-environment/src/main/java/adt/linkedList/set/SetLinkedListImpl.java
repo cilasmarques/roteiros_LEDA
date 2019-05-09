@@ -6,74 +6,67 @@ import adt.linkedList.SingleLinkedListNode;
 public class SetLinkedListImpl<T> extends SingleLinkedListImpl<T> implements SetLinkedList<T> {
 
 	@Override
+	public void insert(T element) {
+		super.insert(element);
+		removeDuplicates();
+	}
+
+	@Override
 	public void removeDuplicates() {
-		SingleLinkedListNode<T> tempHead = this.getHead();
+		SingleLinkedListNode<T> aux = this.getHead();
 
-		if (isEmpty()) {
-			return;
-		}
+		while (!aux.isNIL()) {
+			SingleLinkedListNode<T> next = aux.getNext();
 
-		while (!tempHead.isNIL()) {
-			SingleLinkedListNode<T> iNode = tempHead.getNext();
-
-			while (!iNode.isNIL()) {
-				if (tempHead.getData().equals(iNode.getData()))
-					iNode.setData(null);
-				iNode = iNode.getNext();
+			while (!next.isNIL()) {
+				if (aux.getData().equals(next.getData())) {
+					next.setData(next.getNext().getData());
+					next.setNext(next.getNext().getNext());
+				} else {
+					next = next.getNext();
+				}
 			}
-			tempHead = tempHead.getNext();
+
+			aux = aux.getNext();
 		}
 	}
 
 	@Override
 	public SetLinkedList<T> union(SetLinkedList<T> otherSet) {
-		if (this.isEmpty())
-			return otherSet;
-		else if (otherSet.isEmpty())
-			return this;
+		SetLinkedList<T> result = new SetLinkedListImpl<>();
 
-		SingleLinkedListNode auxHead = this.getHead();
-		while (!auxHead.isNIL()) {
-			otherSet.insert((T) auxHead.getData());
-			auxHead = auxHead.getNext();
-		}
+		result.concatenate(this);
+		result.concatenate(otherSet);
 
-		return otherSet;
+		result.removeDuplicates();
+
+		return result;
 	}
 
 	@Override
 	public SetLinkedList<T> intersection(SetLinkedList<T> otherSet) {
-		if (this.isEmpty())
-			return otherSet;
-		else if (otherSet.isEmpty())
-			return this;
+		SingleLinkedListNode<T> aux = this.getHead();
+		SetLinkedList<T> result = new SetLinkedListImpl<>();
 
-		SingleLinkedListNode auxHead = this.getHead();
-		SetLinkedList<T> intersecSet = new SetLinkedListImpl<>();
-
-		while (!auxHead.isNIL()) {
-			if (otherSet.search((T) auxHead.getData()) != null)
-				intersecSet.insert((T) auxHead.getData());
-			auxHead = auxHead.getNext();
+		while (!aux.isNIL()) {
+			for (T e : otherSet.toArray()) {
+				if (aux.getData().equals(e)) {
+					result.insert(e);
+				}
+			}
+			aux = aux.getNext();
 		}
-
-		return intersecSet;
+		result.removeDuplicates();
+		return result;
 	}
 
 	@Override
 	public void concatenate(SetLinkedList<T> otherSet) {
-		if (this.isEmpty() || otherSet.isEmpty())
-			return;
-
-		SingleLinkedListNode<T> auxHead = this.getHead();
-
-		while (!auxHead.getNext().isNIL()) {
-			auxHead = auxHead.getNext();
+		T[] array = otherSet.toArray();
+		for (T e : array) {
+			this.insert(e);
 		}
-
-		SingleLinkedListNode<T> auxHead2 = ((SingleLinkedListImpl<T>) otherSet).getHead();
-
-		auxHead.setNext(auxHead2);
+		removeDuplicates();
 	}
 
 }
