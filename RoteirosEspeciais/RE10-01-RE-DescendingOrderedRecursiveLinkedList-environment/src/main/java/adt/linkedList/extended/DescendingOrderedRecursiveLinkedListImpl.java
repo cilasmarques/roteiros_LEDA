@@ -1,5 +1,6 @@
 package adt.linkedList.extended;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 import adt.linkedList.LinkedList;
@@ -21,7 +22,7 @@ public class DescendingOrderedRecursiveLinkedListImpl<T> extends
 
 	private Comparator<T> comparator;
 
-	public DescendingOrderedRecursiveLinkedListImpl(Comparator<T> comparator) {
+	public DescendingOrderedRecursiveLinkedListImpl() {
 		super();
 		this.comparator = comparator;
 	}
@@ -36,6 +37,7 @@ public class DescendingOrderedRecursiveLinkedListImpl<T> extends
 			return null;
 		}
 
+		sortLinkedList(this);
 		T[] a = this.toArray();
 		return a[size()-1];
 	}
@@ -84,29 +86,35 @@ public class DescendingOrderedRecursiveLinkedListImpl<T> extends
 	}
 
 
-	private void removeDuplicate(DescendingOrderedRecursiveLinkedListImpl sortLinkedList) {
-		if (!sortLinkedList.isEmpty()) {
-			T value1 = (T) sortLinkedList.getData();
-			T value2 = (T) sortLinkedList.getNext().getData();
-			if(getComparator().compare(value1, value2) == 0){
-				sortLinkedList.setNext(sortLinkedList.getNext().getNext());
+	public void removeDuplicate(RecursiveSingleLinkedListImpl node) {
+		if (!node.isEmpty() && !node.getNext().isEmpty()) {
+			T value1 = (T) node.getData();
+			T value2 = (T) node.getNext().getData();
+			if (value1.equals(value2)) {
+				remove(value2);
+				removeDuplicate(node);
+			} else {
+				removeDuplicate(node.getNext());
 			}
-		} else {
-			sortLinkedList.removeDuplicate((DescendingOrderedRecursiveLinkedListImpl) sortLinkedList.getNext());
 		}
 	}
 
-	private void sortLinkedList(RecursiveSingleLinkedListImpl minnorNode){
-		DescendingOrderedRecursiveLinkedListImpl thisAux = (DescendingOrderedRecursiveLinkedListImpl) minnorNode.getNext();
+	public void sortLinkedList(RecursiveSingleLinkedListImpl minnorNode) {
+		RecursiveSingleLinkedListImpl thisAux = minnorNode.getNext();
+		RecursiveSingleLinkedListImpl minnorNodeActual = minnorNode;
 		T minnorValue = (T) minnorNode.getData();
 
-		if (!minnorNode.isEmpty()){
-			while(!thisAux.isEmpty()){
+		if (!minnorNode.isEmpty() && minnorValue != null) {
+			while (!thisAux.isEmpty() && thisAux.getData() != null) {
 				T actualValue = (T) thisAux.getData();
-				if(getComparator().compare(minnorValue, actualValue) == 1){
+				if (getComparator().compare(minnorValue, actualValue) == 1) {
+					minnorNodeActual = thisAux;
 					minnorValue = actualValue;
 				}
+				thisAux = thisAux.getNext();
 			}
+
+			minnorNodeActual.setData(minnorNode.getData());
 			minnorNode.setData(minnorValue);
 			sortLinkedList(minnorNode.getNext());
 		}

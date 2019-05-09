@@ -32,13 +32,13 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public void insert(T element) {
-		if (element == null) return;
-
-		if (isEmpty()){
-			this.setData(element);
-			this.setNext(new RecursiveSingleLinkedListImpl<>());
-		} else {
-			getNext().insert(element);
+		if (element != null) {
+			if (isEmpty()){
+				setData(element);
+				setNext(new RecursiveSingleLinkedListImpl<>());
+			} else {
+				getNext().insert(element);
+			}
 		}
 	}
 
@@ -57,14 +57,14 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 	@Override
 	public T[] toArray() {
 		T[] a = (T[]) new Object[size()];
-		insertArray(a, 0, this.getData());
+		insertArray(a, 0, this);
 		return a;
 	}
 
-	private void insertArray(T[] array, int i, T element){
-		if (element != null && i < size()) {
-			array[i] = element;
-			insertArray(array, i + 1, element);
+	private void insertArray(T[] array, int i, RecursiveSingleLinkedListImpl node){
+		if (node.getData() != null && i < size()) {
+			array[i] = (T) node.getData();
+			insertArray(array, i + 1, node.getNext());
 		}
 	}
 
