@@ -36,14 +36,14 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
 	@Override
 	public BSTNode<T> search(T element) {
-		if (element == null)
-			return null;
+		if (element != null)
+			return search(getRoot(), element);
 
-		return search(getRoot(), element);
+		return null;
 	}
 
 	private BSTNode<T> search(BSTNode<T> node, T element) {
-		if(node.getData().equals(element))
+		if(node.getData().equals(element) || node.isEmpty())
 			return node;
 
 		if(element.compareTo(node.getData()) < 0)
@@ -54,9 +54,9 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
 	@Override
 	public void insert(T element) {
-		if (element != null && search(element) == null) {
+		BSTNode<T> node = search(element);
+		if (element != null && node.getData().compareTo(element) != 0)
 			insert(null, getRoot(), element);
-		}
 	}
 
 	private void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
@@ -158,8 +158,44 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
 	@Override
 	public void remove(T element) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		BSTNode<T> node = search(element);
+
+		if (node != null && !node.isEmpty())
+			remove(node);
+	}
+
+	private void remove(BSTNode<T> node) {
+		boolean haveOnlyRightChild = (!node.getRight().isEmpty() && node.getLeft().isEmpty());
+		boolean haveOnlyLeftChild = (!node.getLeft().isEmpty() && node.getRight().isEmpty());
+
+		if(node.isLeaf()){
+			node.setData(null);
+		} else if (haveOnlyLeftChild || haveOnlyRightChild){
+			remove1Degree(node, haveOnlyLeftChild, haveOnlyRightChild);
+		} else {
+			remove2Degree(node);
+		}
+	}
+
+	private void remove2Degree(BSTNode<T> node) {
+
+	}
+
+	private void remove1Degree(BSTNode<T> node, boolean haveOnlyLeftChild, boolean haveOnlyRightChild) {
+		if (!node.equals(getRoot())){
+			if (haveOnlyLeftChild) {
+				node.getLeft().setParent(node.getParent());
+				node.getParent().setLeft(node.getLeft());
+			} else if (haveOnlyRightChild) {
+				node.getRight().setParent(node.getParent());
+				node.getParent().setRight(node.getRight());
+			}
+		} else {
+			if (haveOnlyLeftChild)
+				this.root = (BSTNode<T>) this.root.getLeft();
+			else if (haveOnlyRightChild)
+				this.root = (BSTNode<T>) this.root.getRight();
+		}
 	}
 
 	@Override
