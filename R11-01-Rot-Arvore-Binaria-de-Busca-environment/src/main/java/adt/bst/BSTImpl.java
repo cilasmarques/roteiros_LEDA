@@ -1,238 +1,276 @@
 package adt.bst;
 
-import adt.bt.BTNode;
-
 public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
-	protected BSTNode<T> root;
+   protected BSTNode<T> root;
 
-	public BSTImpl() {
-		root = new BSTNode<T>();
-	}
+   public BSTImpl() {
+      root = new BSTNode<T>();
+   }
 
-	public BSTNode<T> getRoot() {
-		return this.root;
-	}
+   public BSTNode<T> getRoot() {
+      return this.root;
+   }
 
-	@Override
-	public boolean isEmpty() {
-		return root.isEmpty();
-	}
+   @Override
+   public boolean isEmpty() {
+      return root.isEmpty();
+   }
 
-	@Override
-	public int height() {
-		if (!isEmpty())
-			return height(getRoot());
+   @Override
+   public int height() {
+      return height(this.root);
+   }
 
-		return -1;
-	}
+   private int height(BSTNode<T> node) {
+      if (node.isEmpty()) {
+         return -1;
+      } else {
+         return 1 + Math.max(height((BSTNode<T>) node.getLeft()), height((BSTNode<T>) node.getRight()));
+      }
+   }
 
-	private int height(BSTNode<T> node) {
-		if (node.isEmpty())
-			return 0;
-		else
-			return 1 + height((BSTNode<T>) node.getLeft()) + height((BSTNode<T>) node.getRight());
-	}
+   @Override
+   public BSTNode<T> search(T element) {
+      if (element == null) {
+         return null;
+      }
+      return search(this.root, element);
+   }
 
-	@Override
-	public BSTNode<T> search(T element) {
-		if (element != null)
-			return search(getRoot(), element);
+   private BSTNode<T> search(BSTNode<T> node, T element) {
+      if (node.isEmpty() || node.getData().equals(element)) {
+         return node;
+      } else if (node.getData().compareTo(element) > 0) {
+         return search((BSTNode<T>) node.getLeft(), element);
+      } else {
+         return search((BSTNode<T>) node.getRight(), element);
+      }
+   }
 
-		return null;
-	}
+   @Override
+   public void insert(T element) {
+      if (element != null) {
+         insert(null, this.root, element);
+      }
+   }
 
-	private BSTNode<T> search(BSTNode<T> node, T element) {
-		if(node.getData().equals(element) || node.isEmpty())
-			return node;
+   private void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
+      if (node.isEmpty()) {
+         node.setParent(parent);
+         node.setData(element);
+         node.setLeft(new BSTNode<T>());
+         node.setRight(new BSTNode<T>());
+      } else if (node.getData().compareTo(element) > 0) {
+         this.insert(node, (BSTNode<T>) node.getLeft(), element);
+      } else if (node.getData().compareTo(element) < 0) {
+         this.insert(node, (BSTNode<T>) node.getRight(), element);
+      }
+   }
 
-		if(element.compareTo(node.getData()) < 0)
-			return search((BSTNode<T>) node.getLeft(), element);
-		else
-			return search((BSTNode<T>) node.getRight(), element);
-	}
+   @Override
+   public BSTNode<T> maximum() {
+      return maximum(this.root);
+   }
 
-	@Override
-	public void insert(T element) {
-		BSTNode<T> node = search(element);
-		if (element != null && node.getData().compareTo(element) != 0)
-			insert(null, getRoot(), element);
-	}
+   private BSTNode<T> maximum(BSTNode<T> node) {
+      if (node == null || node.isEmpty()) {
+         return null;
+      } else if (node.getRight().isEmpty()) {
+         return node;
+      } else {
+         return maximum((BSTNode<T>) node.getRight());
+      }
+   }
 
-	private void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
-		if (node.isEmpty()) {
-			node.setParent(parent);
-			node.setData(element);
-			node.setLeft(new BSTNode<T>());
-			node.setRight(new BSTNode<T>());
-		}
+   @Override
+   public BSTNode<T> minimum() {
+      return minimum(this.root);
+   }
 
-		else if (node.getData().compareTo(element) > 0)
-			this.insert(node, (BSTNode<T>) node.getLeft(), element);
+   private BSTNode<T> minimum(BSTNode<T> node) {
+      if (node == null || node.isEmpty()) {
+         return null;
+      } else if (node.getLeft().isEmpty()) {
+         return node;
+      } else {
+         return minimum((BSTNode<T>) node.getLeft());
+      }
+   }
 
-		else if (node.getData().compareTo(element) < 0)
-			this.insert(node, (BSTNode<T>) node.getRight(), element);
-	}
+   @Override
+   public BSTNode<T> sucessor(T element) {
+      BSTNode<T> node = search(element);
+      if (node == null) {
+         return null;
+      } else {
+         return sucessor(node);
+      }
+   }
 
-	@Override
-	public BSTNode<T> maximum() {
-		if (!isEmpty())
-			return maximum(getRoot());
+   private BSTNode<T> sucessor(BSTNode<T> node) {
+      BSTNode<T> sucessor = minimum((BSTNode<T>) node.getRight());
+      if (sucessor != null && !sucessor.isEmpty()) {
+         return sucessor;
+      } else {
+         sucessor = (BSTNode<T>) node.getParent();
+         while (sucessor != null && !sucessor.isEmpty() && (sucessor.getData().compareTo(node.getData()) < 0)) {
+            sucessor = (BSTNode<T>) sucessor.getParent();
+         }
+         if (sucessor != null && sucessor.isEmpty()) {
+            return null;
+         } else {
+            return sucessor;
+         }
+      }
+   }
 
-		return null;
-	}
+   @Override
+   public BSTNode<T> predecessor(T element) {
+      BSTNode<T> node = search(element);
+      if (node == null) {
+         return null;
+      } else {
+         return predecessor(node);
+      }
+   }
 
-	private BSTNode<T> maximum(BSTNode<T> node) {
-		if (node.getRight().isEmpty())
-			return node;
+   private BSTNode<T> predecessor(BSTNode<T> node) {
+      BSTNode<T> predecessor = maximum((BSTNode<T>) node.getLeft());
+      if (predecessor != null && !predecessor.isEmpty()) {
+         return predecessor;
+      } else {
+         predecessor = (BSTNode<T>) node.getParent();
+         while (predecessor != null && !predecessor.isEmpty() && (predecessor.getData().compareTo(node.getData()) > 0)) {
+            predecessor = (BSTNode<T>) predecessor.getParent();
+         }
+         if (predecessor != null && predecessor.isEmpty()) {
+            return null;
+         } else {
+            return predecessor;
+         }
+      }
+   }
 
-		return maximum((BSTNode<T>) node.getRight());
-	}
+   @Override
+   public void remove(T element) {
+      if (element != null) {
+         BSTNode<T> node = search(element);
+         if (node != null && !node.isEmpty()) {
+            remove(node);
+         }
+      }
+   }
 
-	@Override
-	public BSTNode<T> minimum() {
-		if (!isEmpty())
-			return minimum(getRoot());
+   private void remove(BSTNode<T> node) {
+      boolean isOneRight = (node.getLeft().isEmpty() && !node.getRight().isEmpty());
+      boolean isOneLeft = (!node.getLeft().isEmpty() && node.getRight().isEmpty());
+      if (node.isLeaf()) {
+         node.setData(null);
+      } else if (isOneLeft || isOneRight) {
+         removeNode1Grau(node);
+      } else {
+         removeNode2Graus(node);
+      }
 
-		return null;
-	}
+   }
 
-	private BSTNode<T> minimum(BSTNode<T> node) {
-		if (node.getLeft().isEmpty())
-			return node;
+   private void removeNode1Grau(BSTNode<T> node) {
+      BSTNode<T> filho = (node.getLeft().isEmpty() && !node.getRight().isEmpty()) ? (BSTNode<T>) node.getRight()
+            : (BSTNode<T>) node.getLeft();
 
-		return maximum((BSTNode<T>) node.getLeft());
-	}
+      if (node.getParent() == null) {
+         filho.setParent(null);
+         this.root = filho;
+      } else {
+         if (!node.getParent().isEmpty() && !node.getParent().getLeft().isEmpty()
+               && node.getParent().getLeft().getData().equals(node.getData())) {
+            node.getParent().setLeft(filho);
+         } else {
+            node.getParent().setRight(filho);
+         }
+         filho.setParent(node.getParent());
+      }
+   }
 
-	@Override
-	public BSTNode<T> sucessor(T element) {
-		BSTNode<T> node = search(element);
+   private void removeNode2Graus(BSTNode<T> node) {
+      BSTNode<T> aux = minimum((BSTNode<T>) node.getRight());
+      if (aux.isEmpty()) {
+         aux = maximum((BSTNode<T>) node.getLeft());
+      }
+      T element = node.getData();
+      node.setData(aux.getData());
+      aux.setData(element);
+      remove(aux);
+   }
 
-		if (!isEmpty() && node != null)
-			return sucessor(node, element);
+   @Override
+   public T[] preOrder() {
+      T[] array = (T[]) new Comparable[this.size()];
+      preOrder(array, this.root, 0);
+      return array;
+   }
 
-		return null;
-	}
+   private int preOrder(T[] array, BSTNode<T> node, int index) {
+      if (!node.isEmpty()) {
+         array[index] = node.getData();
+         index++;
+         index = preOrder(array, (BSTNode<T>) node.getLeft(), index);
+         index = preOrder(array, (BSTNode<T>) node.getRight(), index);
+      }
+      return index;
 
-	private BSTNode<T> sucessor(BSTNode<T> node, T element) {
-		if (!node.getRight().isEmpty())
-			return minimum((BSTNode<T>) node.getRight());
+   }
 
-		BTNode<T> previousNode = node.getParent();
-		while (!previousNode.isEmpty() && previousNode != null && previousNode.getData().compareTo(node.getData()) <= 0){
-			node = (BSTNode<T>) previousNode;
-			previousNode = previousNode.getParent();
-		}
+   @Override
+   public T[] order() {
+      T[] array = (T[]) new Comparable[this.size()];
+      order(array, this.root, 0);
+      return array;
+   }
 
-		if(node.equals(getRoot()) && node.getData().compareTo(element) < 0)
-			return null;
+   private int order(T[] array, BSTNode<T> node, int index) {
+      if (!node.isEmpty()) {
+         index = order(array, (BSTNode<T>) node.getLeft(), index);
+         array[index] = node.getData();
+         index++;
+         index = order(array, (BSTNode<T>) node.getRight(), index);
+      }
+      return index;
+   }
 
-		return node;
-	}
+   @Override
+   public T[] postOrder() {
+      T[] array = (T[]) new Comparable[this.size()];
+      postOrder(array, this.root, 0);
+      return array;
+   }
 
-	@Override
-	public BSTNode<T> predecessor(T element) {
-		BSTNode<T> node = search(element);
+   private int postOrder(T[] array, BSTNode<T> node, int index) {
+      if (!node.isEmpty()) {
+         index = postOrder(array, (BSTNode<T>) node.getLeft(), index);
+         index = postOrder(array, (BSTNode<T>) node.getRight(), index);
+         array[index] = node.getData();
+         index++;
+      }
+      return index;
+   }
 
-		if (!isEmpty() && node != null)
-			return predecessor(node, element);
+   /**
+    * This method is already implemented using recursion. You must understand
+    * how it work and use similar idea with the other methods.
+    */
+   @Override
+   public int size() {
+      return size(root);
+   }
 
-		return null;
-	}
-
-	private BSTNode<T> predecessor(BSTNode<T> node, T element) {
-		if (!node.getLeft().isEmpty())
-			return maximum((BSTNode<T>) node.getLeft());
-
-		BTNode<T> previousNode = node.getParent();
-		while (!previousNode.isEmpty() && previousNode != null && previousNode.getData().compareTo(node.getData()) >= 0){
-			node = (BSTNode<T>) previousNode;
-			previousNode = previousNode.getParent();
-		}
-
-		if(node.equals(getRoot()) && node.getData().compareTo(element) > 0)
-			return null;
-
-		return node;
-	}
-
-	@Override
-	public void remove(T element) {
-		BSTNode<T> node = search(element);
-
-		if (node != null && !node.isEmpty())
-			remove(node);
-	}
-
-	private void remove(BSTNode<T> node) {
-		boolean haveOnlyRightChild = (!node.getRight().isEmpty() && node.getLeft().isEmpty());
-		boolean haveOnlyLeftChild = (!node.getLeft().isEmpty() && node.getRight().isEmpty());
-
-		if(node.isLeaf()){
-			node.setData(null);
-		} else if (haveOnlyLeftChild || haveOnlyRightChild){
-			remove1Degree(node, haveOnlyLeftChild, haveOnlyRightChild);
-		} else {
-			remove2Degree(node);
-		}
-	}
-
-	private void remove2Degree(BSTNode<T> node) {
-
-	}
-
-	private void remove1Degree(BSTNode<T> node, boolean haveOnlyLeftChild, boolean haveOnlyRightChild) {
-		if (!node.equals(getRoot())){
-			if (haveOnlyLeftChild) {
-				node.getLeft().setParent(node.getParent());
-				node.getParent().setLeft(node.getLeft());
-			} else if (haveOnlyRightChild) {
-				node.getRight().setParent(node.getParent());
-				node.getParent().setRight(node.getRight());
-			}
-		} else {
-			if (haveOnlyLeftChild)
-				this.root = (BSTNode<T>) this.root.getLeft();
-			else if (haveOnlyRightChild)
-				this.root = (BSTNode<T>) this.root.getRight();
-		}
-	}
-
-	@Override
-	public T[] preOrder() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
-
-	@Override
-	public T[] order() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
-
-	@Override
-	public T[] postOrder() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
-
-	/**
-	 * This method is already implemented using recursion. You must understand
-	 * how it work and use similar idea with the other methods.
-	 */
-	@Override
-	public int size() {
-		return size(root);
-	}
-
-	private int size(BSTNode<T> node) {
-		int result = 0;
-		// base case means doing nothing (return 0)
-		if (!node.isEmpty()) { // indusctive case
-			result = 1 + size((BSTNode<T>) node.getLeft())
-					+ size((BSTNode<T>) node.getRight());
-		}
-		return result;
-	}
-
+   private int size(BSTNode<T> node) {
+      int result = 0;
+      // base case means doing nothing (return 0)
+      if (!node.isEmpty()) { // indusctive case
+         result = 1 + size((BSTNode<T>) node.getLeft()) + size((BSTNode<T>) node.getRight());
+      }
+      return result;
+   }
 }
