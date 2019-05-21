@@ -50,13 +50,28 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 			return search((BSTNode<T>) node.getLeft(), element);
 		else
 			return search((BSTNode<T>) node.getRight(), element);
-
 	}
 
 	@Override
 	public void insert(T element) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (element != null && search(element) == null) {
+			insert(null, getRoot(), element);
+		}
+	}
+
+	private void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
+		if (node.isEmpty()) {
+			node.setParent(parent);
+			node.setData(element);
+			node.setLeft(new BSTNode<T>());
+			node.setRight(new BSTNode<T>());
+		}
+
+		else if (node.getData().compareTo(element) > 0)
+			this.insert(node, (BSTNode<T>) node.getLeft(), element);
+
+		else if (node.getData().compareTo(element) < 0)
+			this.insert(node, (BSTNode<T>) node.getRight(), element);
 	}
 
 	@Override
