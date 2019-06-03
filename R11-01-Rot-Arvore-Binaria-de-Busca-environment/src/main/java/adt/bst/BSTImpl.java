@@ -19,15 +19,12 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
 	@Override
 	public int height() {
-		if (isEmpty()) {
-			return -1;
-		}
 		return height(this.root);
 	}
 
 	private int height(BSTNode<T> node) {
 		if (node.isEmpty()) {
-			return 0;
+			return -1;
 		} else {
 			return 1 + Math.max(height((BSTNode<T>) node.getLeft()), height((BSTNode<T>) node.getRight()));
 		}
@@ -167,10 +164,11 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 	}
 
 	private void remove(BSTNode<T> node) {
+		boolean isOneRight = (node.getLeft().isEmpty() && !node.getRight().isEmpty());
+		boolean isOneLeft = (!node.getLeft().isEmpty() && node.getRight().isEmpty());
 		if (node.isLeaf()) {
 			node.setData(null);
-		} else if ((node.getLeft().isEmpty() && !node.getRight().isEmpty())
-				|| (!node.getLeft().isEmpty() && node.getRight().isEmpty())) {
+		} else if (isOneLeft || isOneRight) {
 			removeNode1Grau(node);
 		} else {
 			removeNode2Graus(node);
@@ -186,12 +184,13 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 			filho.setParent(null);
 			this.root = filho;
 		} else {
-			if (node.getLeft().isEmpty() && !node.getRight().isEmpty()) {
+			if (!node.getParent().isEmpty() && !node.getParent().getLeft().isEmpty()
+					&& node.getParent().getLeft().getData().equals(node.getData())) {
 				node.getParent().setLeft(filho);
 			} else {
 				node.getParent().setRight(filho);
 			}
-			filho.setParent(node);
+			filho.setParent(node.getParent());
 		}
 	}
 
@@ -259,8 +258,8 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 	}
 
 	/**
-	 * This method is already implemented using recursion. You must understand
-	 * how it work and use similar idea with the other methods.
+	 * This method is already implemented using recursion. You must understand how
+	 * it work and use similar idea with the other methods.
 	 */
 	@Override
 	public int size() {
@@ -271,10 +270,8 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		int result = 0;
 		// base case means doing nothing (return 0)
 		if (!node.isEmpty()) { // indusctive case
-			result = 1 + size((BSTNode<T>) node.getLeft())
-					+ size((BSTNode<T>) node.getRight());
+			result = 1 + size((BSTNode<T>) node.getLeft()) + size((BSTNode<T>) node.getRight());
 		}
 		return result;
 	}
-
 }
