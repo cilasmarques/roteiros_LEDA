@@ -8,9 +8,6 @@ import org.junit.Test;
 import adt.bst.BSTImpl;
 import adt.bt.BTNode;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class StudentBSTTest {
 
 	private BSTImpl<Integer> tree;
@@ -106,8 +103,6 @@ public class StudentBSTTest {
 
 		while (!tree.isEmpty()) {
 			tree.remove(tree.getRoot().getData());
-			System.out.println(tree.getRoot());
-			System.out.println(Arrays.toString(tree.order()));
 			assertEquals(--size, tree.size());
 		}
 	}
