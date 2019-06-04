@@ -7,3 +7,33 @@
   <level>FINE</level>
   <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.104 at 03-06-2019 16*23*26</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-03T18:36:09.470-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.104 at 03-06-2019 18*36*09</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-04T00:59:55.543-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.104 at 04-06-2019 00*59*55</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-04T02:26:57.980-0300</date>
+  <logger>CILAS MEDEIROS DE FARIAS MARQUES</logger>
+  <level>FINE</level>
+  <message>File 118110386-CILAS MEDEIROS DE FARIAS MARQUES.zip was received. It was sent by CILAS MEDEIROS DE FARIAS MARQUES from IP 10.0.0.104 at 04-06-2019 02*26*57</message>
+</record>
