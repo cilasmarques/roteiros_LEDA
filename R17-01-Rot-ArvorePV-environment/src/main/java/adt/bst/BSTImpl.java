@@ -54,7 +54,7 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		}
 	}
 
-	private void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
+	public void insert(BSTNode<T> parent, BSTNode<T> node, T element) {
 		if (node.isEmpty()) {
 			node.setParent(parent);
 			node.setData(element);
