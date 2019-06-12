@@ -27,8 +27,7 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 			else
 				return Math.max(blackHeight((RBNode<T>) node.getLeft()), blackHeight((RBNode<T>) node.getRight()));
 		} else
-			return 0; // não contar o no como +1 na altura, coloquei -1 tirando
-		// do no vazio (quando e empty)
+			return 0;
 	}
 
 	protected boolean verifyProperties() {
@@ -68,24 +67,19 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 	 */
 	private boolean verifyChildrenOfRedNodes() {
 		if (root != null && !root.isEmpty())
-			return verifyChildrenOfRedNodes((RBNode<T>) root.getLeft())
-					&& verifyChildrenOfRedNodes((RBNode<T>) root.getRight());
+			return verifyChildrenOfRedNodes((RBNode<T>) root.getLeft()) && verifyChildrenOfRedNodes((RBNode<T>) root.getRight());
 
 		return true;
 	}
 
 	private boolean verifyChildrenOfRedNodes(RBNode<T> node) {
 		if (!node.isEmpty()) {
-			if (node.getColour() == Colour.RED) {
-				if (((RBNode<T>) node.getLeft()).getColour() != Colour.BLACK
-						|| ((RBNode<T>) node.getRight()).getColour() != Colour.BLACK) {
+			if (node.getColour() == Colour.RED)
+				if (((RBNode<T>) node.getLeft()).getColour() != Colour.BLACK || ((RBNode<T>) node.getRight()).getColour() != Colour.BLACK)
 					return false;
-				}
-			}
-			return verifyChildrenOfRedNodes((RBNode<T>) node.getLeft())
-					&& verifyChildrenOfRedNodes((RBNode<T>) node.getRight());
+			else
+				return verifyChildrenOfRedNodes((RBNode<T>) node.getLeft()) && verifyChildrenOfRedNodes((RBNode<T>) node.getRight());
 		}
-
 		return true;
 	}
 
@@ -93,45 +87,35 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 	 * Verifies the black-height property from the root.
 	 */
 	private boolean verifyBlackHeight() {
-		if (root != null) {
+		if (root != null && !root.isEmpty()) {
 			int leftBlackHeight = blackHeight((RBNode<T>) root.getLeft());
 			int rightBlackHeight = blackHeight((RBNode<T>) root.getRight());
 			return rightBlackHeight == leftBlackHeight;
 		}
-
 		return true;
 	}
 
 	@Override
-	public void insert(T value) {
-		if (value != null) {
-			RBNode<T> NIL = new RBNode<>();
-			this.insert(NIL, (RBNode<T>) this.root, value);
+	public void insert(T element) {
+		if (element != null) {
+			insert(null, (RBNode) this.root, element);
 		}
 	}
 
 	private void insert(RBNode<T> parent, RBNode<T> node, T element) {
 		if (node.isEmpty()) {
+			node.setParent(parent);
 			node.setData(element);
 			node.setLeft(new RBNode<T>());
 			node.setRight(new RBNode<T>());
-			node.getLeft().setParent(node);
-			node.getRight().setParent(node);
-			if (!node.equals(root)) {
-				node.setParent(parent);
-			}
 			node.setColour(Colour.RED);
-
 			fixUpCase1(node);
-		} else {
-			if ((node.getData().compareTo(element)) < 0) {
-				insert(node, (RBNode<T>) node.getRight(), element);
-			} else {
-				insert(node, (RBNode<T>) node.getLeft(), element);
-			}
+		} else if (node.getData().compareTo(element) > 0) {
+			this.insert(node, (RBNode<T>) node.getLeft(), element);
+		} else if (node.getData().compareTo(element) < 0) {
+			this.insert(node, (RBNode<T>) node.getRight(), element);
 		}
 	}
-
 
 	@Override
 	public RBNode<T>[] rbPreOrder() {
@@ -154,7 +138,7 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 
 	// FIXUP methods
 	protected void fixUpCase1(RBNode<T> node) {
-		if (node.equals(root))
+		if (node == root)
 			node.setColour(Colour.BLACK);
 		else
 			fixUpCase2(node);
@@ -162,20 +146,20 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 
 	protected void fixUpCase2(RBNode<T> node) {
 		RBNode parent = (RBNode) node.getParent();
-		if (!parent.getColour().equals(Colour.BLACK))
+		if (parent.getColour() != Colour.BLACK)
 			fixUpCase3(node);
 	}
 
 	protected void fixUpCase3(RBNode<T> node) {
 		RBNode parent = (RBNode) node.getParent();
 		RBNode grandfather = (RBNode) parent.getParent();
-		RBNode uncle = getUncle(node, grandfather);
+		RBNode uncle = getUncle(parent, grandfather);
 
-		if (uncle.getColour().equals(Colour.RED) && uncle != null){
+		if (uncle.getColour() == Colour.RED){
 			parent.setColour(Colour.BLACK);
 			uncle.setColour(Colour.BLACK);
-			grandfather.setColour(Colour.BLACK);
-			fixUpCase1(node);
+			grandfather.setColour(Colour.RED);
+			fixUpCase1(grandfather);
 		} else {
 			fixUpCase4(node);
 		}
@@ -187,7 +171,7 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 		if(isRightChild(node) && !isRightChild(parent)) {
 			leftRotation(parent);
 			next = (RBNode<T>) node.getLeft();
-		} else {
+		} else if (!isRightChild(node) && isRightChild(parent)) {
 			rightRotation(parent);
 			next = (RBNode<T>) node.getRight();
 		}
@@ -200,9 +184,9 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 		parent.setColour(Colour.BLACK);
 		grandfather.setColour(Colour.RED);
 		if (isRightChild(node))
-			leftRotation(node);
+			leftRotation(grandfather);
 		else
-			rightRotation(node);
+			rightRotation(grandfather);
 	}
 
 	private void rightRotation(RBNode<T> node) {
@@ -228,13 +212,13 @@ public class RBTreeImpl<T extends Comparable<T>> extends BSTImpl<T>
 	}
 
 	private boolean isRightChild(RBNode<T> node) {
-		if (node.getParent().getRight().equals(node))
+		if (node.getParent().getRight() == node)
 			return true;
 		return false;
 	}
 
-	private RBNode getUncle(RBNode node, RBNode grandfather) {
-		if(isRightChild(node))
+	private RBNode getUncle(RBNode parent, RBNode grandfather) {
+		if(isRightChild(parent))
 			return (RBNode) grandfather.getLeft();
 		return (RBNode) grandfather.getRight();
 	}

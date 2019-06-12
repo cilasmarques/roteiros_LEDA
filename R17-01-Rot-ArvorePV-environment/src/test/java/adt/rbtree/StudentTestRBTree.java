@@ -7,6 +7,8 @@ import org.junit.Before;
 
 import adt.rbtree.RBNode.Colour;
 
+import java.util.Arrays;
+
 public class StudentTestRBTree {
 
 	public RBTreeImpl<Integer> myRB;
