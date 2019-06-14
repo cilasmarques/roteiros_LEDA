@@ -1,5 +1,7 @@
 package adt.btree;
 
+import java.util.LinkedList;
+
 public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 
 	protected BNode<T> root;
@@ -21,25 +23,50 @@ public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 	}
 
 	@Override
-	public int height() {
-		return height(this.root);
-	}
+	public int height() { return height(this.root); }
 
 	private int height(BNode<T> node) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		int result = -1;
+		if (!node.isEmpty()) {
+			if (node.isLeaf())
+				return 0;
+			else
+				result = 1 + height(node.children.get(0));
+		}
+		return result;
 	}
 
 	@Override
 	public BNode<T>[] depthLeftOrder() {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		BNode<T>[] array = new BNode[size(getRoot())];
+		depthLeftOrder(array, 0, this.root);
+		return array;
+	}
+
+	private int depthLeftOrder(BNode<T> array[], int index, BNode<T> node) {
+		if (!node.isEmpty()) {
+			array[index++] = node;
+			for (int i = 0; i < node.children.size(); i++) {
+				index = depthLeftOrder(array, index, node.children.get(i));
+			}
+		}
+		return index;
 	}
 
 	@Override
 	public int size() {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		return size(getRoot());
+	}
+
+	private int size(BNode<T> node) {
+		if (node.isEmpty())
+			return 0;
+
+		int result = node.size();
+		for (int i = 0; i < node.children.size(); i++) {
+			result += size(node.children.get(i));
+		}
+		return result ;
 	}
 
 	@Override
@@ -63,16 +90,39 @@ public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 
 	@Override
 	public void insert(T element) {
+		if (element != null)
+			insert(element, getCorrectNode(getRoot(), element));
+	}
+
+	private void insert(T element, BNode<T> node) {
+		if (node.isFull()){
+			split(node, element);
+			promote(node, element);
+		}
+		node.addElement(element);
+	}
+
+	private BNode<T> getCorrectNode(BNode<T> node, T element) {
+		if ((node.isEmpty() || node.isLeaf()) && !node.isFull())
+			return node;
+
+		if (node.isLeaf() && node.isFull()){
+			return node;
+		}
+
+		else {
+			int i = 0;
+			while (i <= node.size() && element.compareTo(node.getElementAt(i)) > 0 ) {i++;}
+			return getCorrectNode(node.getChildren().get(i), element);
+		}
+	}
+
+	private void split(BNode<T> node, T element) {
 		// TODO Implement your code here
 		throw new UnsupportedOperationException("Not Implemented yet!");
 	}
 
-	private void split(BNode<T> node) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
-	}
-
-	private void promote(BNode<T> node) {
+	private void promote(BNode<T> node, T element) {
 		// TODO Implement your code here
 		throw new UnsupportedOperationException("Not Implemented yet!");
 	}
