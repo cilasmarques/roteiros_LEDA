@@ -35,6 +35,7 @@ public class StudentTestBTree {
 		tree1.insert(4);
 		tree1.insert(6);
 		tree1.insert(8);
+
 		try {
 			assertEquals("[[6], [2, 4], [8]]",
 					Arrays.toString(tree1.depthLeftOrder()));

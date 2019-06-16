@@ -1,6 +1,7 @@
 package adt.btree;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 
@@ -23,108 +24,202 @@ public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 	}
 
 	@Override
-	public int height() { return height(this.root); }
+	public int height() {
+		return height(this.root);
+	}
 
 	private int height(BNode<T> node) {
 		int result = -1;
+
 		if (!node.isEmpty()) {
 			if (node.isLeaf())
 				return 0;
 			else
-				result = 1 + height(node.children.get(0));
+				return 1 + height(node.getChildren().get(0));
 		}
 		return result;
 	}
 
 	@Override
 	public BNode<T>[] depthLeftOrder() {
-		BNode<T>[] array = new BNode[size(getRoot())];
-		depthLeftOrder(array, 0, this.root);
+		List<BNode<T>> list = new LinkedList<BNode<T>>();
+
+		addListDepthLeftOrder(this.root, list);
+
+		BNode<T>[] result = toArray(list);
+		return result;
+	}
+
+	private BNode<T>[] toArray(List<BNode<T>> list) {
+		BNode<T>[] array = new BNode[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			array[i] = list.get(i);
+		}
 		return array;
 	}
 
-	private int depthLeftOrder(BNode<T> array[], int index, BNode<T> node) {
+	private void addListDepthLeftOrder(BNode<T> node, List<BNode<T>> list) {
 		if (!node.isEmpty()) {
-			array[index++] = node;
-			for (int i = 0; i < node.children.size(); i++) {
-				index = depthLeftOrder(array, index, node.children.get(i));
+			list.add(node);
+			for (int i = 0; i < node.getChildren().size(); i++) {
+				addListDepthLeftOrder(node.getChildren().get(i), list);
 			}
 		}
-		return index;
 	}
 
 	@Override
 	public int size() {
-		return size(getRoot());
+		if (this.isEmpty())
+			return 0;
+		else
+			return size(this.root);
 	}
 
 	private int size(BNode<T> node) {
-		if (node.isEmpty())
+		if (node == null || node.isEmpty())
 			return 0;
 
-		int result = node.size();
-		for (int i = 0; i < node.children.size(); i++) {
-			result += size(node.children.get(i));
+		else {
+			int size = node.size();
+			for (BNode<T> child : node.getChildren())
+				size += size(child);
+
+			return size;
 		}
-		return result ;
 	}
 
 	@Override
 	public BNodePosition<T> search(T element) {
-		if (element != null){
-			return search(getRoot(), element);
-		}
-		return null;
+		if (element != null)
+			return search(this.getRoot(), element);
+		else
+			return new BNodePosition<T>();
 	}
 
 	private BNodePosition<T> search(BNode<T> node, T element) {
-		int i = 1;
-		while (i <= node.size() && element.compareTo(node.elements.get(i)) > 0 ) {i++;}
-		if (i < node.size() && element.equals(node.elements.get(i)))
-			return new BNodePosition<>(node,i);
-		if (node.isLeaf())
-			return new BNodePosition<>();
+		if (node == null || element == null)
+			return new BNodePosition<T>();
 
-		return search(node.getChildren().get(i), element);
+		else {
+			int index = 0;
+
+			// Chega ate o indice onde o elemento pode estar.
+			while (index < node.size() && node.getElementAt(index).compareTo(element) < 0)
+				index++;
+
+			// Se o Node for o buscado, retorne ele.
+			if (index < node.size() && node.getElementAt(index).equals(element))
+				return new BNodePosition<>(node, index);
+
+			// Se nao, cheque se o node eh folha, se sim, o elemento nao esta na
+			// arvore.
+			else if (node.isLeaf())
+				return new BNodePosition<T>();
+
+			// Chamada recursiva para os filhos do Node.
+			else
+				return search(node.getChildren().get(index), element);
+		}
 	}
 
 	@Override
 	public void insert(T element) {
 		if (element != null)
-			insert(element, getCorrectNode(getRoot(), element));
+			insert(getRoot(), element);
 	}
 
-	private void insert(T element, BNode<T> node) {
-		if (node.isFull()){
-			split(node, element);
-			promote(node, element);
+	private void insert(BNode<T> node, T element) {
+		int index = 0;
+
+		while (index < node.size() && node.getElementAt(index).compareTo(element) < 0)
+			index++;
+
+		if (index >= node.size() || !node.getElementAt(index).equals(element)) {
+			if (node.isLeaf())
+				node.addElement(element);
+			else
+				insert(node.getChildren().get(index), element);
 		}
-		node.addElement(element);
+		// Adicionei num node folha e, se preciso, terei que fazer split
+		// Adicao Bottom-Up
+		if (node.size() > node.getMaxKeys())
+			split(node);
 	}
 
-	private BNode<T> getCorrectNode(BNode<T> node, T element) {
-		if ((node.isEmpty() || node.isLeaf()) && !node.isFull())
-			return node;
+	private void split(BNode<T> node) {
 
-		if (node.isLeaf() && node.isFull()){
-			return node;
+		// Escolha o elemento medio
+
+		int midIndex = (node.getElements().size() / 2);
+
+		BNode<T> left = new BNode<>(this.order);
+		BNode<T> right = new BNode<>(this.order);
+
+		// Valores menores que a mediana sao colocados em um novo node folha
+		// (esquerdo)
+
+		// Valores maiores sao colocados em uma outro novo node folha (direito)
+
+		for (int i = 0; i < node.size(); i++) {
+			if (i < midIndex)
+				left.getElements().add(node.getElementAt(i));
+			else if (i > midIndex)
+				right.getElements().add(node.getElementAt(i));
 		}
+		T midElement = node.getElementAt(midIndex);
 
-		else {
-			int i = 0;
-			while (i <= node.size() && element.compareTo(node.getElementAt(i)) > 0 ) {i++;}
-			return getCorrectNode(node.getChildren().get(i), element);
+		if (!node.isLeaf()) {
+			if (node.getChildren().size() > 0) {
+				for (int i = 0; i <= midIndex; i++) {
+					left.addChild(i, node.getChildren().get(i));
+				}
+				int index = 0;
+				for (int i = midIndex + 1; i < node.getChildren().size(); i++) {
+					right.addChild(index, node.getChildren().get(i));
+					index += 1;
+				}
+			}
+		}
+		// Um split na raiz origina uma nova raiz
+		if (node.equals(this.getRoot())) {
+			BNode<T> newRoot = new BNode<>(this.order);
+			newRoot.addElement(midElement);
+			node.setParent(newRoot);
+			this.root = newRoot;
+			newRoot.addChild(0, left);
+			newRoot.addChild(1, right);
+			newRoot.getChildren().get(0).setParent(newRoot);
+			newRoot.getChildren().get(1).setParent(newRoot);
+		} else {
+			node.addChild(0, left);
+			node.addChild(1, right);
+			promote(node);
 		}
 	}
 
-	private void split(BNode<T> node, T element) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
-	}
+	private void promote(BNode<T> node) {
+		int midIndex = (node.getElements().size() / 2);
 
-	private void promote(BNode<T> node, T element) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		T midElement = node.getElementAt(midIndex);
+
+		node.getElements().clear();
+		node.addElement(midElement);
+
+		BNode<T> parent = node.getParent();
+
+		if (parent != null) {
+			node.getChildren().get(0).setParent(parent);
+			node.getChildren().get(1).setParent(parent);
+
+			int index = parent.getChildren().indexOf(node);
+
+			parent.addElement(midElement);
+			parent.addChild(index, node.getChildren().get(0));
+			parent.addChild(index + 1, node.getChildren().get(1));
+			node.getChildren().get(0).setParent(parent);
+			node.getChildren().get(1).setParent(parent);
+			parent.getChildren().remove(node);
+		}
 	}
 
 	// NAO PRECISA IMPLEMENTAR OS METODOS ABAIXO
