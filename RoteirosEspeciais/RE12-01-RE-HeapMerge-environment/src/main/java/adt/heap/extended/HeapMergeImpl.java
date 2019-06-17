@@ -39,6 +39,9 @@ public class HeapMergeImpl extends HeapImpl<Integer> implements HeapMerge {
 
 	@Override
 	public int sumRange(int k1, int k2) {
+		if ((k2 > heap.length) || k1 > heap.length) {return 0;}
+		if (k2 < k1) {return 0;}
+
 		this.comparator = Comparator.reverseOrder();
 		Integer[] array = heapsort(this.heap);
 		int sumRange = 0;
