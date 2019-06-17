@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df0fda70-d9fa-4cbe-9d07-fa0792ce7b10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTNode$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTNode$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BSTNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BTNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/util/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/test-classes/adt/bst/StudentBSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/test-classes/adt/bst/StudentBSTTest.class" afterDir="false" />
+    <list default="true" id="c26fc47c-9298-4258-8e3b-c89aeabc6d97" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,13 +20,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+            <state relative-caret-position="513">
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
               <folding>
-                <element signature="e#3267#3268#0" expanded="true" />
-                <element signature="e#3289#3290#0" expanded="true" />
-                <element signature="e#3479#3480#0" expanded="true" />
-                <element signature="e#3496#3497#0" expanded="true" />
+                <element signature="e#3855#3856#0" expanded="true" />
+                <element signature="e#3883#3884#0" expanded="true" />
+                <element signature="e#3924#3925#0" expanded="true" />
+                <element signature="e#3948#3949#0" expanded="true" />
+                <element signature="e#4004#4005#0" expanded="true" />
+                <element signature="e#4039#4040#0" expanded="true" />
+                <element signature="e#4064#4065#0" expanded="true" />
+                <element signature="e#4082#4083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,14 +48,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="683" />
@@ -72,8 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,22 +92,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="heap" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="heap" type="462c0819:PsiDirectoryNode" />
-              <item name="extended" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -145,17 +124,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df0fda70-d9fa-4cbe-9d07-fa0792ce7b10" name="Default Changelist" comment="" />
-      <created>1560733650894</created>
+      <changelist id="c26fc47c-9298-4258-8e3b-c89aeabc6d97" name="Default Changelist" comment="" />
+      <created>1560753186078</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560733650894</updated>
-      <workItem from="1560733654092" duration="818000" />
+      <updated>1560753186078</updated>
+      <workItem from="1560753189137" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="818000" />
+    <option name="totallyTimeSpent" value="22000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
@@ -197,13 +176,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+        <state relative-caret-position="513">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
           <folding>
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3289#3290#0" expanded="true" />
-            <element signature="e#3479#3480#0" expanded="true" />
-            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#3855#3856#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3924#3925#0" expanded="true" />
+            <element signature="e#3948#3949#0" expanded="true" />
+            <element signature="e#4004#4005#0" expanded="true" />
+            <element signature="e#4039#4040#0" expanded="true" />
+            <element signature="e#4064#4065#0" expanded="true" />
+            <element signature="e#4082#4083#0" expanded="true" />
           </folding>
         </state>
       </provider>
