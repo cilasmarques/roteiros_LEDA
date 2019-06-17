@@ -8,6 +8,9 @@ import org.junit.Test;
 import adt.bst.BSTImpl;
 import adt.bt.BTNode;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class StudentBSTTest {
 
 	private BSTImpl<Integer> tree;

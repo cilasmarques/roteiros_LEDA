@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43dbe751-d868-43e7-845a-2ed30e2c8d44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../R18-01-Rot-ArvoreB-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R18-01-Rot-ArvoreB-environment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/src/main/java/sorting/AbstractSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/src/main/java/sorting/Sorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/src/main/java/sorting/variationsOfBubblesort/RecursiveBubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/src/main/java/sorting/variationsOfBubblesort/TestRecursiveBubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/classes/sorting/AbstractSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/classes/sorting/Sorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/classes/sorting/variationsOfBubblesort/RecursiveBubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/classes/sorting/variationsOfBubblesort/TestRecursiveBubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/exercicio-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE1-01-RE-RecursiveBubblesort-environment/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/DescendingOrderedRecursiveLinkedListImpl.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/src/main/java/adt/Tests/LinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/src/main/java/adt/Tests/OrderedLinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/src/main/java/adt/linkedList/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/src/main/java/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/Tests/LinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/Tests/OrderedLinkedListTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/Tests/OrderedLinkedListTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/Tests/OrderedLinkedListTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/Tests/OrderedLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/linkedList/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/linkedList/RecursiveSingleLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE10-01-RE-DescendingOrderedRecursiveLinkedList-environment/target/classes/adt/linkedList/extended/DescendingOrderedRecursiveLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/src/main/java/sorting/AbstractSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/src/main/java/sorting/Sorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/src/main/java/sorting/variationsOfSelectionsort/RecursiveSelectionSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/target/classes/sorting/AbstractSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/target/classes/sorting/Sorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/target/classes/sorting/variationsOfSelectionsort/RecursiveSelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE2-01-RE-RecursiveSelectionsort-environment/target/classes/sorting/variationsOfSelectionsort/RecursiveSelectionSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/src/main/java/orderStatistic/OrderStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/src/main/java/orderStatistic/OrderStatisticsSelectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/src/main/java/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/target/classes/orderStatistic/OrderStatistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/target/classes/orderStatistic/OrderStatisticsSelectionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/target/classes/orderStatistic/OrderStatisticsSelectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE4-01-RE-OrderStatisticsBubble-environment/target/classes/util/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/Linked list usando comparator.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/DoubleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/DoubleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/DoubleLinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/SingleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/SingleLinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/ordered/OrderedDoubleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/ordered/OrderedLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/adt/linkedList/ordered/OrderedSingleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE5-01-RE-Linked-list-iterativa-ordenada-environment/src/main/java/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/QuicksortComMediana.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/src/main/java/sorting/AbstractSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/src/main/java/sorting/Sorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/src/main/java/sorting/divideAndConquer/QuickSortComMediana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE7-01-RE-QuicksortComMediana-environment/src/main/java/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/QuickSelect.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE8-01-RE-QuickSelect-environment/src/main/java/orderStatistic/QuickSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/BatchLinkedListImpl.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/DoubleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/DoubleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/DoubleLinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/SingleLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/SingleLinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/batch/BatchLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/adt/linkedList/batch/BatchLinkedListImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/src/main/java/util/GenericException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/Tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/DoubleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/DoubleLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/DoubleLinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/SingleLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/SingleLinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/batch/BatchLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/adt/linkedList/batch/BatchLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE9-01-RE-BatchLinkedList-environment/target/classes/util/GenericException.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+              <folding>
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#4984#4985#0" expanded="true" />
+                <element signature="e#5037#5038#0" expanded="true" />
+                <element signature="e#6528#6529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="683" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="bst" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="bst" type="462c0819:PsiDirectoryNode" />
+              <item name="extended" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43dbe751-d868-43e7-845a-2ed30e2c8d44" name="Default Changelist" comment="" />
+      <created>1560717969538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560717969538</updated>
+      <workItem from="1560717973744" duration="9294000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9294000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#4984#4985#0" expanded="true" />
+            <element signature="e#5037#5038#0" expanded="true" />
+            <element signature="e#6528#6529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
