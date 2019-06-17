@@ -82,9 +82,11 @@ public class FullRecursiveBSTImpl<T extends Comparable<T>> extends BSTImpl<T> im
 		BSTNode<T> predecessor = maximum(node);
 		if (predecessor != null && !predecessor.isEmpty() && predecessor.getData().compareTo(node.getData()) < 0)
 			return predecessor;
-		else if (node.getParent() != null && node.getParent().getLeft() != null)
+		else if (node.getParent() != null && node.getParent().getLeft() != null && !node.getParent().getLeft().equals(node))
 			return predecessor((BSTNode<T>) node.getParent().getLeft());
-		return (BSTNode<T>) node.getParent();
+		else if (node.getParent() != null && node.getParent().getLeft() == null && !node.getParent().getLeft().equals(node))
+			return (BSTNode<T>) node.getParent();
+		return node;
 	}
 
 	@Override

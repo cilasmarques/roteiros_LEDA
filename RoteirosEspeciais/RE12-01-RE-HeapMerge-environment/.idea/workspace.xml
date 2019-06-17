@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43dbe751-d868-43e7-845a-2ed30e2c8d44" name="Default Changelist" comment="">
+    <list default="true" id="df0fda70-d9fa-4cbe-9d07-fa0792ce7b10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bst/BST.class" afterDir="false" />
@@ -12,8 +12,9 @@
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/adt/bt/BTNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/classes/util/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/test-classes/adt/bst/StudentBSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../R11-01-Rot-Arvore-Binaria-de-Busca-environment/target/test-classes/adt/bst/StudentBSTTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RE6-01-RE-FullRecursiveBST-environment/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,40 +24,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
-              <folding>
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-                <element signature="e#4984#4985#0" expanded="true" />
-                <element signature="e#5037#5038#0" expanded="true" />
-                <element signature="e#6528#6529#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="90" />
+            <state relative-caret-position="453">
+              <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
               <folding>
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#3267#3268#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="e#3479#3480#0" expanded="true" />
+                <element signature="e#3496#3497#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +49,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java" />
       </list>
     </option>
   </component>
@@ -94,58 +72,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adt" type="462c0819:PsiDirectoryNode" />
-              <item name="bst" type="462c0819:PsiDirectoryNode" />
+              <item name="heap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercicio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RE6-01-RE-FullRecursiveBST-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="RE12-01-RE-HeapMerge-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adt" type="462c0819:PsiDirectoryNode" />
-              <item name="bst" type="462c0819:PsiDirectoryNode" />
+              <item name="heap" type="462c0819:PsiDirectoryNode" />
               <item name="extended" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -155,12 +123,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -179,17 +145,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43dbe751-d868-43e7-845a-2ed30e2c8d44" name="Default Changelist" comment="" />
-      <created>1560717969538</created>
+      <changelist id="df0fda70-d9fa-4cbe-9d07-fa0792ce7b10" name="Default Changelist" comment="" />
+      <created>1560733650894</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560717969538</updated>
-      <workItem from="1560717973744" duration="10432000" />
+      <updated>1560733650894</updated>
+      <workItem from="1560733654092" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10432000" />
+    <option name="totallyTimeSpent" value="818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="748" extended-state="6" />
@@ -229,41 +195,15 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Util.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/heap/HeapImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+        <state relative-caret-position="453">
+          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
           <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#1620#1621#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#4984#4985#0" expanded="true" />
-            <element signature="e#5037#5038#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/extended/FullRecursiveBSTImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="90" />
-          <folding>
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3479#3480#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
           </folding>
         </state>
       </provider>

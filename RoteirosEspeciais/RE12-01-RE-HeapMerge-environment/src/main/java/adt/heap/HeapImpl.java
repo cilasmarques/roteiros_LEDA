@@ -82,8 +82,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 	 * (comparados usando o comparator) elementos na parte de cima da heap.
 	 */
 	private void heapify(int position) {
-		// TODO Implement htis method.
-		throw new UnsupportedOperationException("Not implemented yet!");
+		
 	}
 
 	@Override
@@ -111,8 +110,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 
 	@Override
 	public T rootElement() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return this.heap[0];
 	}
 
 	@Override
@@ -123,8 +121,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return this.index + 1;
 	}
 
 	public Comparator<T> getComparator() {
